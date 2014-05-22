@@ -1,4 +1,4 @@
-=== Disqus Top Commenters Widget By Tricks Panda ===
+=== Top Commenters Widget For Disqus ===
 Plugin URI: http://www.trickspanda.com
 Description: Add a Disqus top commenters widget to your WordPress blog's sidebar.
 Version: 1.0
