@@ -3,7 +3,7 @@
 Plugin Name: Top Commenters Widget For Disqus
 Plugin URI: http://www.trickspanda.com
 Description: Add a Disqus top commenters widget to your WordPress blog's sidebar
-Version: 1.0
+Version: 1.1
 Author: Hardeep Asrani
 Author URI: http://www.hardeepasrani.com
 */
