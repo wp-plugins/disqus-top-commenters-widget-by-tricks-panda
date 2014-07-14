@@ -30,6 +30,21 @@ $instance['commentnumbers'] = "5";
 
 <p>
 <label for="<?php
+        echo $this->get_field_id('title');
+?>">
+Title:
+<br/>
+<input id="<?php
+        echo $this->get_field_id('title');
+?>" 
+name="<?php
+        echo $this->get_field_name('title');
+?>" type="text" value="<?php
+        echo $instance['title'];
+?>" />
+</label>
+<br/>
+<label for="<?php
 echo $this->get_field_id('siteid');
 ?>">
 Disqus Site ID:
@@ -100,6 +115,7 @@ if (1 == $instance['hidemodsoption']) echo 'checked="checked"';
 function update($new_instance, $old_instance)
 {
 $instance = $old_instance;
+$instance['title'] = $new_instance['title'];
 $instance['siteid'] = $new_instance['siteid'];
 $instance['commentnumbers'] = $new_instance['commentnumbers'];
 $instance['hideavataroption'] = $new_instance['hideavataroption'];
@@ -112,8 +128,10 @@ function widget($args, $instance) // widget sidebar output
 extract($args, EXTR_SKIP);
 echo $before_widget;
 echo $before_title;
-?>Top Commenters<?php
+echo $instance['title'];
 echo $after_title;
+
+$title = $instance['title'];
 $siteid = $instance['siteid'];
 $commentnumbers = $instance['commentnumbers'];
 $hideavataroption = $instance['hideavataroption'];
