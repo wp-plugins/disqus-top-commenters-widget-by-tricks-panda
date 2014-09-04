@@ -1,7 +1,7 @@
 === Top Commenters Widget For Disqus ===
 Plugin URI: http://www.trickspanda.com
 Description: Add a Disqus top commenters widget to your WordPress blog's sidebar.
-Version: 1.1
+Version: 1.2
 Requires at least: 2.5
 Tested up to: 4.0
 Contributors: hardeepasrani
@@ -33,3 +33,6 @@ We used Disqus' original top commenters script for the widget.
 
 = 1.1 =
 * Added an option to change widget title.
+
+= 1.2 =
+* Fixed all the debugging errors.
